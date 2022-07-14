@@ -13,6 +13,7 @@ function generateGrid(level) {
     switch (level) {
 
         case 'facile':
+        default:
             cicles = 100;
             addedClass = 'wh-10';
         break;
@@ -33,6 +34,7 @@ function generateGrid(level) {
         grigliaElementi.append(mySquare);
         
         changeBgBlue(mySquare);
+
     }
     
 }
@@ -46,6 +48,6 @@ function generateSquare() {
 function changeBgBlue(mysquare) {
     mysquare.addEventListener('click', function() {
         this.classList.toggle('bg_blue');
-        console.log(mysquare.innerHTML)
+        console.log(mysquare.innerHTML);
     });
 }
