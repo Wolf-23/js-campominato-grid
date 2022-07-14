@@ -37,6 +37,12 @@ function generateGrid(level) {
 
     }
     
+    function changeBgBlue(mysquare) {
+        mysquare.addEventListener('click', function() {
+            this.classList.toggle('bg_blue');
+            console.log(mysquare.innerHTML);
+        });
+    }
 }
 
 function generateSquare() {
@@ -45,9 +51,3 @@ function generateSquare() {
     return square;
 }
 
-function changeBgBlue(mysquare) {
-    mysquare.addEventListener('click', function() {
-        this.classList.toggle('bg_blue');
-        console.log(mysquare.innerHTML);
-    });
-}
